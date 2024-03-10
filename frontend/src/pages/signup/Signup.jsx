@@ -2,6 +2,7 @@ import { IoPerson, IoPersonCircleOutline } from "react-icons/io5";
 import GenderSelect from "./GenderSelect";
 import { FaKey } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -94,12 +95,12 @@ const Signup = () => {
             </button>
           </div>
 
-          <a
-            href="#"
+          <Link
+            to={"/login"}
             className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block"
           >
             Already have an account?
-          </a>
+          </Link>
         </form>
       </div>
     </div>

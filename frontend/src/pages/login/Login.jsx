@@ -1,5 +1,6 @@
 import { IoPerson } from "react-icons/io5";
 import { FaKey } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -46,12 +47,12 @@ const Login = () => {
             <button className="btn btn-outline btn-info btn-md w-full mt-4">Login</button>
           </div>
 
-          <a
-            href="#"
+          <Link
+            to={"/signup"}
             className="text-sm hover:underline hover:text-blue-600 mt-2 inline-block"
           >
             {"Don't"} have an account?
-          </a>
+          </Link>
         </form>
       </div>
     </div>
