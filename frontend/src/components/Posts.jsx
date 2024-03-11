@@ -21,14 +21,14 @@ export const Posts = () => {
         );
         resolve(slicedData);
       });
-    }, 800);
+    }, 1000);
   };
 
    const { data, loading } = useLazyLoad({triggerRef, onGrabData});
 
   return (
     <>
-      <div className="grid grid-cols-3 gap-4 content-start">
+      <div className="w-full mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
         {data.map((image) => {
           // eslint-disable-next-line react/jsx-key
           return <Card owner={image["owner"]} imageUrl={image["imageUrl"]} />;
