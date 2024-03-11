@@ -2,9 +2,9 @@ import LogoutButton from "./LogoutButton";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 rounded-lg mb-4">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Advisoropedia</a>
       </div>
       <div className="flex-none gap-4">
         <div className="dropdown dropdown-end">
@@ -37,7 +37,7 @@ const NavBar = () => {
         </div>
 
         <div className="text-red-500 mx-4">
-            <h3>{<LogoutButton />}</h3>
+            <h3 title="Logout">{<LogoutButton />}</h3>
         </div>
       </div>
     </div>
