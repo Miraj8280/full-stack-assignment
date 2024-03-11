@@ -58,6 +58,8 @@ const useSignup = () => {
         throw new Error(data.error);
       }
 
+      toast.success("Welcome to Advisoropedia");
+
       // Save user data in localStorage
       localStorage.setItem("chat-user", JSON.stringify(data));
 

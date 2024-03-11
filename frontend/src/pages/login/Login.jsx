@@ -30,11 +30,11 @@ const Login = () => {
               </span>
             </label>
             <label className="input input-bordered flex items-center gap-2">
-              <IoPerson className="w-5 h-5 text-gray-500" />
+              <IoPerson className="w-5 h-5 text-gray-600" />
               <input
                 type="text"
                 className="grow"
-                placeholder="Enter your username"
+                placeholder="Demo username: miraj_asraf"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -51,7 +51,7 @@ const Login = () => {
               <input
                 type="password"
                 className="grow"
-                placeholder="Enter your password"
+                placeholder="Demo password: Miraj#123"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />

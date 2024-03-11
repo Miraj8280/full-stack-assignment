@@ -24,6 +24,8 @@ const useLogin = () => {
       if (data.error) {
         throw new Error(data.error);
       }
+      
+      toast.success("Welcome to Advisoropedia");
 
       localStorage.setItem("chat-user", JSON.stringify(data));
 

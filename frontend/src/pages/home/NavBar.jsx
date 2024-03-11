@@ -16,7 +16,7 @@ const NavBar = () => {
             <div className="w-10 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+                src="https://avatars.githubusercontent.com/u/75885581?v=4"
               />
             </div>
           </div>
@@ -25,19 +25,22 @@ const NavBar = () => {
             className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
           >
             <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
+              <a
+                href="https://www.linkedin.com/in/miraj-asraf/"
+                target="_blank"
+                className="justify-between"
+              >
+                LinkedIn
               </a>
             </li>
             <li>
-              <a>Settings</a>
+              <a href="https://github.com/Miraj8280/" target="_blank">GitHub</a>
             </li>
           </ul>
         </div>
 
         <div className="text-red-500 mx-4">
-            <h3 title="Logout">{<LogoutButton />}</h3>
+          <h3 title="Logout">{<LogoutButton />}</h3>
         </div>
       </div>
     </div>
